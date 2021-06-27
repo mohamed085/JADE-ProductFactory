@@ -16,7 +16,6 @@ import java.util.List;
 public class SellerAgent extends Agent {
     public static List<Product> products;
     private SellerGUI sellerGUI;
-    private AID[] customerAgents;
     private int fullPrice;
 
     @Override
@@ -41,7 +40,7 @@ public class SellerAgent extends Agent {
                     int balance = Integer.parseInt(message.substring(message.indexOf("q=") + 3));
 
                     for (Product product1: products) {
-                        if (product1.getName().equals(product) && product1.getNumber() >= quantity && product1.getNumber() > 0) {
+                        if (product1.getName().equals(product) && product1.getNumber() >= quantity) {
                             if (quantity >= 10) {
                                 System.out.println("Factory offer you a 10% discount for you");
                                 System.out.println("Price before discount: " + product1.getPrice() * quantity);
