@@ -1,4 +1,4 @@
-# JADE-ProductFactory
+# JADE-Product Factory
 
 A central agent representing a factory of some type of product wants to sell its products. There are at least three agents representing customers that buy these products one by  one. Each customer will have money to buy the product by requesting it from the factory.  The factory will check for products it can buy at the current time and inform the customer.  The customer will decrease its current balance by the amount it paid for the product. 
 The price can change from time to time. If the price changed from the previous time a  customer bought the product then the factory should inform the customer by the new  price.
